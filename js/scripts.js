@@ -24,8 +24,6 @@ Player.prototype.rolll = function(){
 };
 
 
-
-
 Player.prototype.hold = function(){
   this.totalScore += this.score;    //Hold
   this.score = 0;
@@ -35,4 +33,11 @@ Player.prototype.winner = function(){
   if (this.totalScore >= 100){                         //winner
     alert(this.playerName + "has won the game!!");
   }
+};
+
+Player.prototype.newgame = function(){
+  this.roll = 0;
+  this.score= 0;
+  this.totalScore = 0;
+  this.playerName = "";
 };
