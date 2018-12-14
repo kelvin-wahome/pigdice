@@ -41,3 +41,13 @@ Player.prototype.newgame = function(){
   this.totalScore = 0;
   this.playerName = "";
 };
+
+  var newPlayers = function (){
+    $(".player1Name").val("");
+    $(".player2Name").val("");
+  };
+
+
+
+
+//UI
