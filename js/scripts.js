@@ -70,7 +70,16 @@ $(document).ready(function(){
     player1.playerName = player1;
     player2.playerName = player2;
 
+  });
 
+
+  $("button#player1-roll").click(function(event){
+    player1.roll = rollDice();
+    $("#score1").text(player1.score);
+  });
+  $("button#player2-roll").click(function(event){
+    player2.roll = rollDice();
+    $("#score2").text(player2.score);
 
   });
 });
