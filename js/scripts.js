@@ -43,8 +43,8 @@ Player.prototype.newgame = function(){
 };
 
   var newPlayers = function (){
-    $(".player1Name").val("");
-    $(".player2Name").val("");
+    $(".player1").val("");
+    $(".player2").val("");
   };
 
 
