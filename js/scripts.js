@@ -51,11 +51,11 @@ var newPlayers = function() {
 
 //UI
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $("button#start").click(function(event){
+  $("button#start").click(function(event) {
     eveny.preventDefault();
-    player1 = new Player ();
+    player1 = new Player();
     player2 = new Player();
     $("#main").hide();
     $("#arena").show();
@@ -72,34 +72,51 @@ $(document).ready(function(){
 
   });
 
-         //roll
-  $("button#player1-roll").click(function(event){
+  //roll
+  $("button#player1-roll").click(function(event) {
     player1.roll = rollDice();
     $("#score1").text(player1.score);
     player1.rolll();
 
   });
-  $("button#player2-roll").click(function(event){
+  $("button#player2-roll").click(function(event) {
     player2.roll = rollDice();
     $("#score2").text(player2.score);
     player2.rolll();
 
   });
-        //hold
-  $("button#player1-hold").click(function(event){
+  //hold
+  $("button#player1-hold").click(function(event) {
     player1.hold();
-    $("#totalScore1").text(player1,totalscore);
+    $("#totalScore1").text(player1, totalscore);
     $("#score1").empty();
     player1.checkWinner();
 
   });
-  $("button#player2-hold").click(function(event){
+  $("button#player2-hold").click(function(event) {
     player2.hold();
-    $("#totalScore2").text(player2,totalscore);
+    $("#totalScore2").text(player2, totalscore);
     $("#score2").empty();
     player2.checkWinner();
 
   });
+
+//restart
+
+$("button#restart").click(function(event){
+  $("arena").hide();
+  changePlayers();
+  player1.restart();
+  player2.restart();
+  $("#score1").empty();
+  $("#totalScore1").empty();
+  $("#score2").empty();
+  $("#totalScore2").empty();
+
+  $("#main").show();
+
+});
+
 
 
 });
