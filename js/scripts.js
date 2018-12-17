@@ -55,20 +55,20 @@ $(document).ready(function() {
 
   $("button#start").click(function(event) {
     eveny.preventDefault();
-    player1 = new Player();
-    player2 = new Player();
+    player1 = new Player(true);
+    player2 = new Player(false);
     $("#main").hide();
     $("#arena").show();
 
 
-    var player1 = $("#player1").val();
-    $("#player1").text(player1);
+    var player1 = $("#playerName1").val();
+    $("#playerOne").text(playerOne);
 
-    var player2 = $("#player2").val();
-    $("#player2").text(player2);
+    var player2 = $("#playerName2").val();
+    $("#playerTwo").text(playerTwo);
 
-    player1.playerName = player1;
-    player2.playerName = player2;
+    playerI.playerName = playerOne;
+    playerII.playerName = playerTwo;
 
   });
 

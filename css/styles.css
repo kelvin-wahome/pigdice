@@ -1,5 +1,16 @@
+h1{
+  font: 	#A52A2A;
+}
 body{
   background-image: url(2eRd.gif);
   color: #fff;
+  position:
+
+}
+#arena{
+  display: none;
+}
+#main{
+  float: none;
 
 }
