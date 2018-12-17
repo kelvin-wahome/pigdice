@@ -4,7 +4,8 @@
 ## Description
 {This is a javascript application where two players can take turns at rolling a dice as it displays their scores and whoever gets to 100 first wins the game  }
 ## Setup/Installation Requirements
-Here is a link to the website:https://github.com/kelvin-wahome/pigdice.git
+Here is a link to the website:https://kelvin-wahome.github.io/pigdice/
+
 ## Known Bugs
 There are no known bugs but if by any chance you find one, please contact me via email: wahomekelving@gmail.com.
 
